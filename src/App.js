@@ -2,24 +2,29 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	
+
+	const links = ['Services','Projects','About'];
+
+	return (
+		<div className="App">
+			<div>
+                <h1>LOGOBAKERY</h1>
+			</div>
+			<div id="flex">
+                {links.map((e)=>{
+					return <Links link={e}></Links>
+				})}
+			</div>
+			<div>
+				<button>Contact</button>
+			</div>
+		</div>
+	);
+}
+
+function Links(props) {
+	return <p>{props.link}</p>;
 }
 
 export default App;
