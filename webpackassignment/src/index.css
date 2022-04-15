@@ -1,0 +1,12 @@
+.container{
+    text-align: center;
+}
+#input{
+    width: 200px;
+    height: 200px;
+    background: url('../pic.png');
+}
+img{
+    width: 400px;
+    height: 400px;
+}
