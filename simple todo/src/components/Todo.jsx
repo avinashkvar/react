@@ -5,7 +5,7 @@ import { TodoText } from './TodoText';
 import { nanoid } from 'nanoid';
 function Todo() {
 	const [todoList, settodoList] = React.useState([]);
-
+  
 	function get(todo) {
 		const payload = {
 			title: todo,
@@ -28,6 +28,7 @@ function Todo() {
 			</div>
 		</div>
 	);
+	
 }
 
 export { Todo };
